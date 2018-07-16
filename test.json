@@ -1,0 +1,35 @@
+{
+	"Config":{
+		"Host":"https://qa4-api.mgmresorts.com"
+	},
+	"test":[
+		{
+			"name":"getAccountsDebugAbout",
+			"path":"/payments/{mLifeNumber}/tokens",
+			"call":"get",
+			"body":{},
+			"headers":{
+			  "Content-Type":"application/json",
+				"x-api-key":"{apiKey}",
+				"x-api-version":"{apiVersion}",
+				"x-stub":"success"
+			},
+			"query":[],
+			"auth":[],
+			"response":{
+				"code":"200",
+				"body":{
+					"saturday": {
+						"hoursType": "custom",
+						"opening1": "10:00 AM",
+						"closing1": "11:00 PM"
+					}
+				}
+			},
+			"save_items":[
+				{"email":"string"},
+				{"preferred":"boolean"}
+			]
+		}
+	]
+}
