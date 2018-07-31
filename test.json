@@ -30,6 +30,62 @@
 				{"email":"string"},
 				{"preferred":"boolean"}
 			]
+		},
+		{
+			"name":"proxy restaurant all vegas",
+			"path":"/content/restaurant/basic/all-las-vegas",
+			"call":"GET",
+			"body":{},
+			"headers":{
+			  "Content-Type":"application/json",
+				"x-api-key":"daZZuEYyciaRMLvYTqToL4u6fFfQJOrYTMM8ZpE4",
+				"x-api-version":"1",
+				"content-type":"application/json"
+			},
+			"query":[],
+			"auth":[],
+			"response":{
+				"code":"200",
+				"body":{
+					"saturday": {
+						"hoursType": "custom",
+						"opening1": "10:00 AM",
+						"closing1": "11:00 PM"
+					}
+				}
+			},
+			"save_items":[
+				{"email":"string"},
+				{"preferred":"boolean"}
+			]
+		},
+		{
+			"name":"login",
+			"path":"/auth/login",
+			"call":"POST",
+			"body":{},
+			"headers":{
+				"Content-Type":"application/json",
+				"x-api-key":"daZZuEYyciaRMLvYTqToL4u6fFfQJOrYTMM8ZpE4",
+				"x-api-version":"1",
+				"authorization":"Basic YWNjNG5pbWFAbWdtcWEuY29tOlBhc3N3b3JkMTIz"
+			},
+			"query":[],
+			"auth":[],
+			"response":{
+				"code":"200",
+				"body":{
+					"saturday": {
+						"hoursType": "custom",
+						"opening1": "10:00 AM",
+						"closing1": "11:00 PM"
+					}
+				}
+			},
+			"save_items":[
+				{"email":"string"},
+				{"preferred":"boolean"}
+			]
 		}
 	]
 }
